@@ -32,14 +32,14 @@ global.YotsubaJadibts = true
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.botname = "✿Yotsuba Wa Bot✿"
-global.textbot = "✿Yotsuba Wa Bot Powered @Alba070503✿ "
-global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ 𝙰𝚕𝚋𝚊𝟶𝟽𝟶𝟻𝟶𝟹"
-global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ 𝙰𝚕𝚋𝚊𝟶𝟽𝟶𝟻𝟶𝟹"
+global.botname = "✿Anzo  Bot✿"
+global.textbot = "✿Anzo Bot Powered @Alba070503✿ "
+global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Gabriel"
+global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ gabriel"
 global.etiqueta = "𝙰𝚕𝚋𝚊𝟶𝟽𝟶𝟻𝟶𝟹"
-global.currency = "¥otsucoins"
-global.banner = "https://qu.ax/iBlgz.jpg"
-global.icono = "https://qu.ax/zRNgk.jpg"
+global.currency = "anzocoins"
+global.banner = "https://qu.ax/SRDNR.png"
+global.icono = "https://qu.ax/SRDNR.png"
 global.catalogo = fs.readFileSync('./lib/catalogo.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
