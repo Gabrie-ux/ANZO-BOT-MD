@@ -33,7 +33,7 @@ global.YotsubaJadibts = true
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.botname = "✿Anzo  Bot✿"
-global.textbot = "✿Anzo Bot Powered @Alba070503✿ "
+global.textbot = "✿Anzo Bot Powered by gabriel✿ "
 global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Gabriel"
 global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ gabriel"
 global.etiqueta = "𝙰𝚕𝚋𝚊𝟶𝟽𝟶𝟻𝟶𝟹"
