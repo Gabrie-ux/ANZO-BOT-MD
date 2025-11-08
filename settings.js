@@ -38,8 +38,8 @@ global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Gabriel"
 global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ gabriel"
 global.etiqueta = "𝙰𝚕𝚋𝚊𝟶𝟽𝟶𝟻𝟶𝟹"
 global.currency = "anzocoins"
-global.banner = "https://qu.ax/SRDNR.png"
-global.icono = "https://qu.ax/SRDNR.png"
+global.banner= "https://files.catbox.moe/o4ne56.jpg"
+global.icono = "https://files.catbox.moe/o4ne56.jpg"
 global.catalogo = fs.readFileSync('./lib/catalogo.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
