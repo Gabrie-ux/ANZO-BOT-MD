@@ -7,8 +7,8 @@ const { generateWAMessageFromContent, prepareWAMessageMedia, proto } = pkg
 
 var handler = m => m
 handler.all = async function (m) { 
-global.canalIdM = ["120363198641161536@newsletter", "120363198641161536@newsletter"]
-global.canalNombreM = ["❀𝚂𝚘𝚙𝚑𝚒𝚊 𝚆𝙰 𝙱𝙾𝚃 - 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝙲𝚑𝚊𝚗𝚗𝚎𝚕❀", "❀𝚂𝚘𝚙𝚑𝚒𝚊 𝚆𝙰 𝙱𝙾𝚃 - 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝙲𝚑𝚊𝚗𝚗𝚎𝚕❀"]
+global.canalIdM = ["120363420590235387@newsletter", "120363420590235387@newsletter"]
+global.canalNombreM = ["❀Anzo  𝙱𝙾𝚃 - 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝙲𝚑𝚊𝚗𝚗𝚎𝚕❀", "❀Anzo  𝙱𝙾𝚃 - 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝙲𝚑𝚊𝚗𝚗𝚎𝚕❀"]
 global.channelRD = await getRandomChannel()
 
 global.d = new Date(new Date + 3600000)
