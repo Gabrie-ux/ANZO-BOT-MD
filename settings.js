@@ -33,9 +33,9 @@ global.YotsubaJadibts = true
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.botname = "✿Anzo  Bot✿"
-global.textbot = "✿Anzo Bot Powered by gabriel✿ "
-global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Gabriel"
-global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ gabriel"
+global.textbot = "✿Anzo Bot Powered by perrito✿ "
+global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Perrito"
+global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ perrito"
 global.etiqueta = "𝙰𝚕𝚋𝚊𝟶𝟽𝟶𝟻𝟶𝟹"
 global.currency = "anzocoins"
 global.banner= "https://files.catbox.moe/o4ne56.jpg"
