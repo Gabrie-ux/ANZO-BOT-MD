@@ -123,7 +123,7 @@ const msg = generateWAMessageFromContent(m.chat, {
           text: '✨ Pulsa el botón para unirte al canal oficial'
         }),
         footer: proto.Message.InteractiveMessage.Footer.create({
-          text: 'Pikachu Bot by Deylin'
+          text: 'gabriel-ux Bot by gabzx '
         }),
         header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false
@@ -134,8 +134,8 @@ const msg = generateWAMessageFromContent(m.chat, {
               name: 'cta_url',
               buttonParamsJson: JSON.stringify({
                 display_text: '✐ canal oficial',
-                url: 'https://whatsapp.com/channel/0029VawF8fBBvvsktcInIz3m',
-                merchant_url: 'https://whatsapp.com/channel/0029VawF8fBBvvsktcInIz3m'
+                url: 'https://whatsapp.com/channel/0029VbCJFHmFy72CvfvzSR0Q',
+                merchant_url: 'https://whatsapp.com/channel/0029VbCJFHmFy72CvfvzSR0Q'
               })
             }
           ]
