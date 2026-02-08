@@ -7,7 +7,7 @@ const tags = {
   anime: 'ANIME',
   juegos: 'JUEGOS',
   main: 'INFO',
-  ia: 'IA',
+  ai: 'IA',
   search: 'SEARCH',
   game: 'GAME',
   serbot: 'SUB BOTS',
