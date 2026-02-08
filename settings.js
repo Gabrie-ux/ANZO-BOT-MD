@@ -32,14 +32,14 @@ global.YotsubaJadibts = true
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.botname = "✿karina Bot✿"
-global.textbot = "✿karina Bot Powered by gabzx✿ "
+global.botname = "✿gabxz Bot✿"
+global.textbot = "✿gabzx Bot Powered by gabzx✿ "
 global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ gabzx"
 global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ gabzx"
 global.etiqueta = "gabz2"
-global.currency = "karicoins"
-global.banner= "https://files.catbox.moe/q8wmo1.jpg"
-global.icono = "https://files.catbox.moe/o4ne56.jpg"
+global.currency = "gabcoins"
+global.banner= "https://files.catbox.moe/kdob25.jpg"
+global.icono = "https://files.catbox.moe/kdob25.jpg"
 global.catalogo = fs.readFileSync('./lib/catalogo.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
