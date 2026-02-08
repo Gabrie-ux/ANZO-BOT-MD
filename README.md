@@ -181,4 +181,4 @@ href="https://dash.skyultraplus.com/home"><img src="https://qu.ax/zFzXF.png" hei
 🌸 ᥫ᭡ Propietario
 
 
-<a href="https://github.com/Alba070503"> <img src="https://github.com/Alba070503.png" width="130" height="130" style="border-radius:50%; box-shadow:0 0 10px pink;" alt="Powered @Alba070503"/> </a> <p align="center">✨ Powered by @Alba070503 ✨</p> 
+<a href="https://github.com/gabrie-ux"> <img src="https://github.com/Alba070503.png" width="130" height="130" style="border-radius:50%; box-shadow:0 0 10px pink;" alt="Powered @Alba070503"/> </a> <p align="center">✨ Powered by @Alba070503 ✨</p> 
