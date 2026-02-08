@@ -12,7 +12,8 @@ const handler = async (m, { conn }) => {
         "El amor es la poesía de los sentidos. - Honoré de Balzac",
         "En un beso, sabrás todo lo que he callado. - Pablo Neruda",
         "Ama y haz lo que quieras. Si callas, callarás con amor; si gritas, gritarás con amor. - San Agustín",
-        "El amor no tiene cura, pero es la única cura para todos los males. - Leonardo Cohen"
+        "El amor no tiene cura, pero es la única cura para todos los males. - Leonardo Cohen",
+        "El amor es un susurro en el viento, un eco que resuena en el alma, un recuerdo que nunca se desvanece - gabxz" 
       ];
 
       // 2. Elegir una frase aleatoria
