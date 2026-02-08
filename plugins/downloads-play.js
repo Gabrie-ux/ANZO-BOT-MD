@@ -95,7 +95,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
 }
 
 handler.help = ['play <título>', 'ytmp3 <título>']
-handler.tags = ['downloader']
+handler.tags = ['download']
 handler.command = ['play', 'pene']
 handler.limit = true
 handler.daftar = true
