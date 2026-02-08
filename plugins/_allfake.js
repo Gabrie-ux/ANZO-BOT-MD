@@ -23,7 +23,7 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 var canal = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04'  
 var comunidad = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04'
 var git = 'https://github.com/Alba070503'
-var github = 'https://github.com/Alba070503/YotsaBot-MD' 
+var github = 'https://github.com/Gabrie-ux/ANZO-BOT-MD' 
 var correo = 'doxeosjr@gmail.com'
 global.redes = [canal, comunidad, git, github, correo].getRandom()
 
