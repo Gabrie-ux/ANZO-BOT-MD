@@ -77,7 +77,7 @@ ${readMore}`
       const comandos = help.filter(menu => menu.tags.includes(tag))
       if (!comandos.length) continue
 
-      menuText += `\n╭─🧃 *${tags[tag]}* ${getRandomEmoji()}\n`
+      menuText += `\n> ╭─🧃 *${tags[tag]}* ${getRandomEmoji()}\n`
       menuText += comandos.map(menu =>
         menu.help.map(cmd =>
           `│ ✦ ${cmd}${menu.limit ? ' ◜⭐◞' : ''}${menu.premium ? ' ◜🪪◞' : ''}`
