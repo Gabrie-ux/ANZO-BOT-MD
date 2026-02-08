@@ -62,14 +62,14 @@ let handler = async (m, { conn }) => {
       }))
 
     let menuText = `
-╭════〔 🌺 KARINA - BOT 🌺 〕════╮
-│ 🧃 *Usuario:* @${userId.split('@')[0]}
-│ ⚡ *Tipo:* ${(conn.user.jid === global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
-│ 🌐 *Modo actual:* ${mode}
-│ 👥 *Usuarios registrados:* ${totalreg}
-│ ⏱️ *Tiempo activo:* ${uptime}
-│ 💾 *Comandos:* ${totalCommands}
-╰════════════════════════════╯
+╭════〔 🌺 GABRIEL  - UX 🌺 〕════╮
+> │ 🧃 Usuario: @${userId.split('@')[0]}
+> │ ⚡ Tipo: ${(conn.user.jid === global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
+> │ 🌐 Modo actual: ${mode}
+> │ 👥 Usuarios registrados:* ${totalreg}
+> │ ⏱️ Tiempo activo: ${uptime}
+> │ 💾 Comandos: ${totalCommands}
+> ╰════════════════════════════╯
 🎮 *📋 COMANDOS DISPONIBLES 📋* ⚡
 ${readMore}`
 
