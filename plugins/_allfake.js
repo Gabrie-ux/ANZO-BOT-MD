@@ -8,7 +8,7 @@ const { generateWAMessageFromContent, prepareWAMessageMedia, proto } = pkg
 var handler = m => m
 handler.all = async function (m) { 
 global.canalIdM = ["120363420590235387@newsletter", "120363420590235387@newsletter"]
-global.canalNombreM = ["❀Anzo  𝙱𝙾𝚃 - 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝙲𝚑𝚊𝚗𝚗𝚎𝚕❀", "❀Anzo  𝙱𝙾𝚃 - 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝙲𝚑𝚊𝚗𝚗𝚎𝚕❀"]
+global.canalNombreM = ["ver canal ^⁠_⁠^", "ver canal ^⁠_⁠^"]
 global.channelRD = await getRandomChannel()
 
 global.d = new Date(new Date + 3600000)
@@ -22,8 +22,8 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 var canal = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04'  
 var comunidad = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04'
 var git = 'https://github.com/Alba070503'
-var github = 'https://github.com/Alba070503/YotsubaBot-MD' 
-var correo = 'alba070503yt@gmail.com'
+var github = 'https://github.com/Alba070503/YotsaBot-MD' 
+var correo = 'doxeosjr@gmail.com'
 global.redes = [canal, comunidad, git, github, correo].getRandom()
 
 global.nombre = m.pushName || 'Anónimo'
