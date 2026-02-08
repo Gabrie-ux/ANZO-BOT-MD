@@ -25,7 +25,7 @@ global.prems = []
 
 global.libreria = "Baileys Multi Device"
 global.vs = "^1.8.2|Latest"
-global.nameqr = "Yotsuba Wa Bot"
+global.nameqr = "anzo Wa Bot"
 global.sessions = "Sessions/Principal"
 global.jadi = "Sessions/SubBot"
 global.YotsubaJadibts = true
@@ -35,10 +35,10 @@ global.YotsubaJadibts = true
 global.botname = "✿Anzo  Bot✿"
 global.textbot = "✿Anzo Bot Powered by perrito✿ "
 global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Perrito"
-global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ perrito"
-global.etiqueta = "𝙰𝚕𝚋𝚊𝟶𝟽𝟶𝟻𝟶𝟹"
+global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ gabzx"
+global.etiqueta = "gabz2"
 global.currency = "anzocoins"
-global.banner= "https://files.catbox.moe/o4ne56.jpg"
+global.banner= "https://files.catbox.moe/q8wmo1.jpg"
 global.icono = "https://files.catbox.moe/o4ne56.jpg"
 global.catalogo = fs.readFileSync('./lib/catalogo.jpg')
 
