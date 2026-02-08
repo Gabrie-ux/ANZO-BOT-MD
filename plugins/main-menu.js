@@ -62,7 +62,7 @@ let handler = async (m, { conn }) => {
       }))
 
     let menuText = `
-╭════〔 ⚡ 𝙋𝙄𝙆𝘼𝘾𝙃𝙐 - 𝘽𝙊𝙏 ⚡ 〕════╮
+╭════〔 🌺 KARINA - BOT 🌺 〕════╮
 │ 🧃 *Usuario:* @${userId.split('@')[0]}
 │ ⚡ *Tipo:* ${(conn.user.jid === global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
 │ 🌐 *Modo actual:* ${mode}
@@ -86,7 +86,7 @@ ${readMore}`
       menuText += `\n╰────────────────────────────╯`
     }
 
-    menuText += `\n\n*👑 © Powered by Deylin - Pikachu Bot*`
+    menuText += `\n\n*👑 © Powered by gabzx - Karina Bot*`
 
     const imageUrl = [
       'https://kirito-bot-md.vercel.app/IMG-20250606-WA0167.jpg',
