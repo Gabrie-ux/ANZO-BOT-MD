@@ -21,7 +21,7 @@ return conn.reply(m.chat, `❀ Has *activado* a ${botname}!`, m)
 }}}
 
 handler.help = ['bot']
-handler.tags = ['grupo']
+handler.tags = ['group']
 handler.command = ['bot']
 handler.admin = true
 
