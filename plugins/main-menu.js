@@ -37,7 +37,7 @@ const tags = {
   productivity: 'PRODUCTIVITY',
   social: 'SOCIAL',
   security: 'SECURITY',
-  custom: 'CUSTOM'
+  rg: 'PERFIL'
 }
 
 let handler = async (m, { conn }) => {
