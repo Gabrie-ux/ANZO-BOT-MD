@@ -30,7 +30,7 @@ const tags = {
   education: 'EDUCATION',
   health: 'HEALTH',
   entertainment: 'ENTERTAINMENT',
-  sports: 'SPORTS',
+  rpg: 'rpg',
   travel: 'TRAVEL',
   food: 'FOOD',
   shopping: 'SHOPPING',
