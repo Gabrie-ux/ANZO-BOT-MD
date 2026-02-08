@@ -1,5 +1,5 @@
 {
-"name": "YotsubaBot-MD",
+"name": "GabxzBot-MD",
 "version": "1.8.2",
 "description": "WhatsApp Bot Multi Device",
 "main": "index.js",
@@ -13,14 +13,14 @@
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Alba070503/YotsubaBot-MD.git"
+"url": "git+https://github.com/Gabrie-ux/ANZO-BOT-MD"
 },  
-"author": "Alba070503",
+"author": "gabzx",
 "license": "MIT-License",
 "bugs": {
 "url": "https://github.com/Alba070503/YotsubaBot-MD/issues"
 },
-"homepage": "https://github.com/Alba070503/YotsubaBot-MD#readme",
+"homepage": "https://github.com/Gabrie-ux/ANZO-BOT-MD#readme",
 "dependencies": {
 "@hapi/boom": "^10.0.1",
 "@vitalets/google-translate-api": "^8.0.0",
