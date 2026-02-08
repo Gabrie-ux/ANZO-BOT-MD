@@ -131,11 +131,6 @@ const msg = generateWAMessageFromContent(m.chat, {
         }),
         nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
           buttons: [
-           {
-        buttonId: `${_p}owner`,
-        buttonText: { displayText: "👑 Owner" },
-        type: 1,
-          },
             {
               name: 'cta_url',
               buttonParamsJson: JSON.stringify({
