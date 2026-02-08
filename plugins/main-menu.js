@@ -69,6 +69,7 @@ let handler = async (m, { conn }) => {
 > │ 👥 Usuarios registrados:* ${totalreg}
 > │ ⏱️ Tiempo activo: ${uptime}
 > │ 💾 Comandos: ${totalCommands}
+> | 🥷 descargas web: ${global.web}
 > ╰════════════════════════════╯
 🎮 *📋 COMANDOS DISPONIBLES 📋* ⚡
 ${readMore}`
