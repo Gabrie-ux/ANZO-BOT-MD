@@ -13,6 +13,7 @@ global.channelRD = await getRandomChannel()
 
 global.d = new Date(new Date + 3600000)
 global.locale = 'es'
+global.web = 'https://gabriel-downloader.vercel.app/'
 global.dia = d.toLocaleDateString(locale, {weekday: 'long'})
 global.fecha = d.toLocaleDateString('es', {day: 'numeric', month: 'numeric', year: 'numeric'})
 global.mes = d.toLocaleDateString('es', {month: 'long'})
