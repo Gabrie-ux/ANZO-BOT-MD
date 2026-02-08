@@ -89,11 +89,11 @@ ${readMore}`
     menuText += `\n\n*👑 © Powered by gabzx - Karina Bot*`
 
     const imageUrl = [
-      'https://kirito-bot-md.vercel.app/IMG-20250606-WA0167.jpg',
-      'https://raw.githubusercontent.com/Deylin-Eliac/Pikachu-Bot/main/src/pika.jpg',
-      'https://raw.githubusercontent.com/Deylin-Eliac/Pikachu-Bot/main/src/pikay.jpg',
-      'https://raw.githubusercontent.com/Deylin-Eliac/Pikachu-Bot/main/src/pikachu.jpg',
-      'https://kirito-bot-md.vercel.app/catalogo.jpg'
+      'https://files.catbox.moe/kdob25.jpg',
+      'https://files.catbox.moe/kdob25.jpg',
+      'https://files.catbox.moe/kdob25.jpg',
+      'https://files.catbox.moe/kdob25.jpg',
+      'https://files.catbox.moe/kdob25.jpg'
     ]
     const selectedImage = imageUrl[Math.floor(Math.random() * imageUrl.length)]
     const imageBuffer = await (await fetch(selectedImage)).buffer()
