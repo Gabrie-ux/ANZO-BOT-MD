@@ -30,7 +30,6 @@ const tags = {
   education: 'EDUCATION',
   health: 'HEALTH',
   entertainment: 'ENTERTAINMENT',
-  rpg: 'rpg',
   travel: 'TRAVEL',
   food: 'FOOD',
   shopping: 'SHOPPING',
@@ -61,7 +60,7 @@ let handler = async (m, { conn }) => {
         premium: p.premium
       }))
 
-    let menuText = `
+        let menuText = `
 ╭════〔 🌺 GABRIEL  - UX 🌺 〕════╮
 > │ 🧃 Usuario: @${userId.split('@')[0]}
 > │ ⚡ Tipo: ${(conn.user.jid === global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
@@ -98,55 +97,91 @@ ${readMore}`
     ]
     const selectedImage = imageUrl[Math.floor(Math.random() * imageUrl.length)]
     const imageBuffer = await (await fetch(selectedImage)).buffer()
-    const media = await prepareWAMessageMedia({ image: imageBuffer }, { upload: conn.waUploadToServer })
+    await prepareWAMessageMedia({ image: imageBuffer }, { upload: conn.waUploadToServer })
 
+    await conn.sendMessage(m.chat, {
+      image: imageBuffer,
+      caption: menuText,
+      contextInfo: {
+        mentionedJid: [m.sender],
+        forwardingScore: 999,
+        isForwarded: true
+      }
+    }, { quoted: m })
 
-await conn.sendMessage(m.chat, {
-  image: imageBuffer,
-  caption: menuText,
-  contextInfo: {
-    mentionedJid: [m.sender],
-    forwardingScore: 999,
-    isForwarded: true
-  }
-}, { quoted: m })
+    const msg = generateWAMessageFromContent(m.chat, {
+      viewOnceMessage: {
+        message: {
+          messageContextInfo: {
+            deviceListMetadata: {},
+            deviceListMetadataVersion: 2
+          },
+          interactiveMessage: proto.Message.InteractiveMessage.create({
+            body: proto.Message.InteractiveMessage.Body.create({
+              text: '✨ Accesos rápidos oficiales'
+            }),
+            footer: proto.Message.InteractiveMessage.Footer.create({
+              text: 'gabriel-ux Bot by gabzx'
+            }),
+            header: proto.Message.InteractiveMessage.Header.create({
+              hasMediaAttachment: false
+            }),
+            nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+              buttons: [
+                {
+                  name: 'quick_reply',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: '👑 OWNER',
+                    id: '.owner'
+                  })
+                },
+                {
+                  name: 'quick_reply',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: '🤖 SERBOT',
+                    id: '.code'
+                  })
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: '📸 INSTAGRAM',
+                    url: 'https://www.instagram.com/gabri_itss?igsh=MTEwNGI0YjNqamV3dA==',
+                    merchant_url: 'https://www.instagram.com/gabri_itss?igsh=MTEwNGI0YjNqamV3dA=='
+                  })
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: '🎵 TIKTOK',
+                    url: 'https://www.tiktok.com/@gab_zz32?_r=1&_t=ZS-93lYIcGGeDE',
+                    merchant_url: 'https://www.tiktok.com/@gab_zz32?_r=1&_t=ZS-93lYIcGGeDE'
+                  })
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: '🌐 WEB',
+                    url: 'https://gabriel-downloader.vercel.app/',
+                    merchant_url: 'https://gabriel-downloader.vercel.app/'
+                  })
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: '✐ CANAL OFICIAL',
+                    url: 'https://whatsapp.com/channel/0029VbCJFHmFy72CvfvzSR0Q',
+                    merchant_url: 'https://whatsapp.com/channel/0029VbCJFHmFy72CvfvzSR0Q'
+                  })
+                }
+              ]
+            })
+          })
+        }
+      }
+    }, {})
 
-
-const msg = generateWAMessageFromContent(m.chat, {
-  viewOnceMessage: {
-    message: {
-      messageContextInfo: {
-        deviceListMetadata: {},
-        deviceListMetadataVersion: 2
-      },
-      interactiveMessage: proto.Message.InteractiveMessage.create({
-        body: proto.Message.InteractiveMessage.Body.create({
-          text: '✨ Pulsa el botón para unirte al canal oficial'
-        }),
-        footer: proto.Message.InteractiveMessage.Footer.create({
-          text: 'gabriel-ux Bot by gabzx '
-        }),
-        header: proto.Message.InteractiveMessage.Header.create({
-          hasMediaAttachment: false
-        }),
-        nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-          buttons: [
-            {
-              name: 'cta_url',
-              buttonParamsJson: JSON.stringify({
-                display_text: '✐ canal oficial',
-                url: 'https://whatsapp.com/channel/0029VbCJFHmFy72CvfvzSR0Q',
-                merchant_url: 'https://whatsapp.com/channel/0029VbCJFHmFy72CvfvzSR0Q'
-              })
-            }
-          ]
-        })
-      })
-    }
-  }
-}, {})
-
-await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
+    await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
 
   } catch (e) {
     console.error(e)
@@ -161,7 +196,6 @@ handler.register = true
 
 export default handler
 
-// Extras
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
