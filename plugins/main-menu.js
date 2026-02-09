@@ -3,6 +3,42 @@ const { generateWAMessageFromContent, prepareWAMessageMedia, proto } = pkg
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
+const tags = {
+  anime: 'ANIME',
+  juegos: 'JUEGOS',
+  main: 'INFO',
+  ai: 'IA',
+  search: 'SEARCH',
+  game: 'GAME',
+  serbot: 'SUB BOTS',
+  rpg: 'RPG',
+  sticker: 'STICKER',
+  group: 'GROUPS',
+  nable: 'ON / OFF',
+  premium: 'PREMIUM',
+  download: 'DOWNLOAD',
+  tools: 'TOOLS',
+  fun: 'FUN',
+  nsfw: 'NSFW',
+  cmd: 'DATABASE',
+  owner: 'OWNER',
+  audio: 'AUDIOS',
+  advanced: 'ADVANCED',
+  weather: 'WEATHER',
+  news: 'NEWS',
+  finance: 'FINANCE',
+  education: 'EDUCATION',
+  health: 'HEALTH',
+  entertainment: 'ENTERTAINMENT',
+  travel: 'TRAVEL',
+  food: 'FOOD',
+  shopping: 'SHOPPING',
+  productivity: 'PRODUCTIVITY',
+  social: 'SOCIAL',
+  security: 'SECURITY',
+  rg: 'PERFIL'
+}
+
 let handler = async (m, { conn }) => {
   try {
     const userId = m.sender
@@ -12,7 +48,7 @@ let handler = async (m, { conn }) => {
     const totalreg = Object.keys(global.db.data.users).length
     const uptime = clockString(process.uptime() * 1000)
 
-            let menuText = `
+                let menuText = `
 ╭════〔 🌺 GABRIEL  - UX 🌺 〕════╮
 > │ 🧃 Usuario: @${userId.split('@')[0]}
 > │ ⚡ Tipo: ${(conn.user.jid === global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
@@ -24,6 +60,30 @@ let handler = async (m, { conn }) => {
 > ╰════════════════════════════╯
 🎮 *📋 COMANDOS DISPONIBLES 📋* ⚡
 ${readMore}`
+
+    const help = Object.values(global.plugins)
+      .filter(p => !p.disabled)
+      .map(p => ({
+        help: Array.isArray(p.help) ? p.help : (p.help ? [p.help] : []),
+        tags: Array.isArray(p.tags) ? p.tags : (p.tags ? [p.tags] : []),
+        limit: p.limit,
+        premium: p.premium
+      }))
+
+    for (let tag in tags) {
+      const comandos = help.filter(menu => menu.tags.includes(tag))
+      if (!comandos.length) continue
+
+      menuText += `\n> ╭─🧃 *${tags[tag]}*\n`
+      menuText += comandos.map(menu =>
+        menu.help.map(cmd =>
+          `│ ✦ ${cmd}${menu.limit ? ' ◜⭐◞' : ''}${menu.premium ? ' ◜🪪◞' : ''}`
+        ).join('\n')
+      ).join('\n')
+      menuText += `\n╰────────────────────────────╯`
+    }
+
+    menuText += `\n\n*👑 © Powered by gabzx*`
 
     const imageBuffer = await (await fetch('https://files.catbox.moe/kdob25.jpg')).buffer()
 
