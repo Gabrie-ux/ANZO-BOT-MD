@@ -31,7 +31,8 @@ const handler = async (m, { text, conn }) => {
 
 ${list}
 
-> Responde con el número para descargar uno de los siguientes vídeos o bien, usa directamente la URL.`
+> ahora para descargarlo usar este comando 
+#xnxx + URL ( pones el URL).`
 
   const { key } = await conn.sendMessage(m.chat, { text: caption }, { quoted: m })
   conn.xnxx[m.sender] = {
