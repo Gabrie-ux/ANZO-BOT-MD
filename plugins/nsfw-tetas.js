@@ -9,6 +9,5 @@ m.react('✅');
 }
 
 handler.command = ['tetas'];
-handler.tag = ['nsfw'];
 
 export default handler;
