@@ -163,7 +163,7 @@ ${readMore}`
 
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = ['menu', 'menú']
+handler.command = ['menu', 'menú', 'help']
 export default handler
 
 const more = String.fromCharCode(8206)
