@@ -31,8 +31,8 @@ const handler = async (m, { text, conn }) => {
 
 ${list}
 
-> ahora para descargarlo usar este comando 
-#xnxx + URL ( pones el URL).`
+> ahora para descargarlo usar este >comando 
+> #xnxx + URL ( pones el URL).`
 
   const { key } = await conn.sendMessage(m.chat, { text: caption }, { quoted: m })
   conn.xnxx[m.sender] = {
