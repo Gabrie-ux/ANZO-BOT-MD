@@ -57,6 +57,7 @@ let handler = async (m, { conn }) => {
 > │ ⏱️ Tiempo activo: ${uptime}
 > │ 💾 Comandos: ${totalCommands}
 > | 🥷 descargas web: ${global.web}
+> | 🤗NUEVOS COMANDOS: xnxx/tetas/pack
 > ╰════════════════════════════╯
 🎮 *📋 COMANDOS DISPONIBLES 📋* ⚡
 ${readMore}`
